@@ -1,0 +1,356 @@
+/* Fonte Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #2d3436;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search-container {
+    position: absolute;
+    right: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    position: absolute;
+    right: 20px;
+}
+
+.login-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Home */
+.home {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Produtos */
+.produtos {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.produto {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.produto button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+/* Contato */
+.contato {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato form input, .contato form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Carrinho */
+.carrinho {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    border-top: 2px solid #ddd;
+}
+
+.carrinho h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: #ff4747;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #e63946;
+}
+
+.cart-summary {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #0000FF;
+}
+
+.cart-summary p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-item img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .cart-summary p {
+        font-size: 1.2rem;
+    }
+
+    .btn-checkout {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+/* Estilos para as variações de produto */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botões em geral */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para os botões "Adicionar ao Carrinho" e "Comprar" */
+.btn-buy {
+    margin-left: 15px;
+}
+
+.btn-cart {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contato form input, .contato form textarea, .contato form button {
+        width: 90%;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Shirts FC - E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Pro Shirts FC</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#carrinho" id="cart-link">Carrinho (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" placeholder="Pesquisar Produtos..." class="search-bar">
+        <button class="search-btn" id="search-btn">🔍</button>
+    </div>
+
+    <div class="login-container">
+        <a href="#login-link">Login</a>
+    </div>
+
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <h2>Bem-vindo ao Pro Shirts FC</h2>
+                <p>Encontre camisas incríveis para todos os fãs de futebol!</p>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="produto" data-id="1">
+                    <img src="camisa.jpg" alt="Camisa 1">
+                    <h3>Real Madrid</h3>
+                    <p>Preço: R$110,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    <button class="buy-now">Comprar</button>
+                </div>
+                <div class="produto" data-id="2">
+                    <img src="camisa.png" alt="Camisa 2">
+                    <h3>Milan</h3>
+                    <p>Preço: R$110,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    <button class="buy-now">Comprar</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+        <section id="carrinho" class="carrinho">
+            <div class="container">
+                <h2>Carrinho de Compras</h2>
+                <div id="cart-items"></div>
+                <p>Total: R$<span id="cart-total">0.00</span></p>
+                <button id="checkout-btn" class="btn-checkout">Finalizar Compra</button>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a Pro Shirts FC</h2>
+            <p>A Pro Shirts FC é uma loja especializada em camisas para torcedores de futebol. Nossa missão é oferecer produtos de alta qualidade e design exclusivo para você mostrar seu amor pelo esporte!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pro Shirts FC | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
